@@ -23,5 +23,5 @@ export async function catCommandHandler(_, args, basePath) {
     const fullpath = path.join(basePath, args[0]);
     read(fullpath)
         .then(console.log)
-        .catch(err => console.log(err.message));
+        .catch(err => console.log(err));
 }
