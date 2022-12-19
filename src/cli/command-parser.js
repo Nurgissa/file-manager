@@ -5,6 +5,7 @@ import { rmCommandHandler } from '../handlers/rmCommandHandler.js';
 import { lsCommandHandler } from '../handlers/lsCommandHandler.js';
 import { addCommandHandler } from '../handlers/addCommandHandler.js';
 import { rnCommandHandler } from '../handlers/rnCommandHandler.js';
+import { cpCommandHandler } from '../handlers/cpCommandHandler.js';
 
 function noops(...args) {
     console.log(args);
@@ -17,7 +18,7 @@ const commandMap = {
     'cat': catCommandHandler,
     'add': addCommandHandler,
     'rn': rnCommandHandler,
-    'cp': noops,
+    'cp': cpCommandHandler,
     'mv': noops,
     'rm': rmCommandHandler,
     'os': osCommandHandler,
