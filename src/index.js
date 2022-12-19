@@ -3,8 +3,6 @@ import { stdin, stdout } from 'process';
 import { extractUsername } from './cli/arguments.js';
 import { commandHandler, parseCommand } from './cli/command-parser.js';
 
-
-
 function promptGreeting(username) {
     console.log(`Welcome to the File Manager, ${username}!\n`);
 }
