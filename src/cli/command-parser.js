@@ -6,6 +6,7 @@ import { lsCommandHandler } from '../handlers/lsCommandHandler.js';
 import { addCommandHandler } from '../handlers/addCommandHandler.js';
 import { rnCommandHandler } from '../handlers/rnCommandHandler.js';
 import { cpCommandHandler } from '../handlers/cpCommandHandler.js';
+import { hashCommandHandler } from '../handlers/hashCommandHandler.js';
 
 function noops(...args) {
     console.log(args);
@@ -22,7 +23,7 @@ const commandMap = {
     'mv': noops,
     'rm': rmCommandHandler,
     'os': osCommandHandler,
-    'hash': noops,
+    'hash': hashCommandHandler,
     'compress': noops,
     'decompress': noops,
     '.exit': (username) => {
