@@ -1,11 +1,5 @@
 import os from 'os';
 
-function argumentValidator(args) {
-    if (args.length() < 1) {
-        return "no argument provided"
-    }
-}
-
 export function osCommandHandler(_, args) {
     const [ key = '--'] = args;
     switch(key) {
